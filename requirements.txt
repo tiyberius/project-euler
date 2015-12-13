@@ -1,0 +1,7 @@
+--index-url https://pypi.python.org/simple/
+-e .
+
+# development requirements
+tox>=1.8
+pytest
+sphinx
