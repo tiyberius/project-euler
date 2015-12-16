@@ -3,6 +3,6 @@
 
 # development requirements
 tox>=1.8
-pytest
-coverage
-sphinx
+pytest==2.8.5
+coverage==4.0.3
+sphinx==1.3.3
