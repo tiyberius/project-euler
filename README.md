@@ -14,9 +14,13 @@ machine:
     $ pip install -r requirements.txt  # only necessary if you plan on running the tests/hacking
     $ python solve_problems.py  # wouldn't it be nice if real life worked this way
 
-If you're developing, you can use `tox` to run all tests.
+If you're developing, you can use 
 
-Sample output from `solve_problems.py`
+    $ tox
+
+to run all unit and integration tests.
+
+To solve all the problems in this repo, run `solve_problems.py` and you should get output like
 
     Problem 22 - Names Scores
       Answer: 871198282
