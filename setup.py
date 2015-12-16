@@ -18,7 +18,9 @@ setup(
     ],
     package_dir={'project-euler': 'names_scores'},
     include_package_data=True,
-    install_requires=[],
+    install_requires=[
+        'contexttimer==0.3.1',
+    ],
     license='MIT',
     zip_safe=False,
     keywords='euler',

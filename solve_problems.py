@@ -1,4 +1,5 @@
 from collections import namedtuple
+from contexttimer import Timer
 
 import time
 
@@ -17,11 +18,10 @@ def solve_all_problems():
     for problem in problems:
         print 'Problem {number} - {description}'.format(number=problem.number,
                                                         description=problem.description)
-        start = time.clock()
-        answer = problem.solution_function()
-        end = time.clock()
+        with Timer() as timer:
+            answer = problem.solution_function()
         print '  Answer: {answer}'.format(answer=answer)
-        print '  Time: {time} seconds'.format(time=round(end - start, 3))
+        print '  Time: {time} seconds'.format(time=round(timer.elapsed, 3))
         print ''
 
 
